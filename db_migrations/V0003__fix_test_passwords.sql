@@ -1,0 +1,2 @@
+-- Обновление паролей тестовых пользователей на валидный bcrypt хеш
+UPDATE users SET password_hash = '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewY5GyYqYlQqKBQC' WHERE email IN ('ivan@test.com', 'anna@test.com', 'dmitry@test.com', 'elena@test.com', 'alex@test.com');
